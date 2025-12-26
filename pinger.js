@@ -1,7 +1,7 @@
 const axios = require('axios');
 
 // البيانات التي قدمتها مدمجة في المحرك
-const TARGET_URL = "https://abdultowabomar-ux.github.io/Image_extensions/"; 
+const TARGET_URL ="https://a6ed6b89-6eea-42ef-b361-7c88061b7145-00-1c22t8mummu3o.picard.replit.dev/"; 
 const TELEGRAM_TOKEN = "8001439036:AAFAVndQ0GlWuz0djflhyPYo5Jo17oMLAHo";
 const CHAT_ID = "6068331455";
 
