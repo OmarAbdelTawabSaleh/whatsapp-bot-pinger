@@ -1,0 +1,16 @@
+name: Bot Pinger Engine
+on:
+  schedule:
+    - cron: "*/10 * * * *" # سيعمل تلقائياً كل 10 دقائق
+  workflow_dispatch: # يتيح لك تشغيله يدوياً
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm install axios
+      - run: node pinger.js
