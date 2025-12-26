@@ -1,8 +1,8 @@
 name: Bot Pinger Engine
 on:
   schedule:
-    - cron: "*/10 * * * *" # يعمل كل 10 دقائق
-  workflow_dispatch: # للتشغيل اليدوي
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
 
 jobs:
   build:
@@ -17,7 +17,7 @@ jobs:
           node-version: '20'
 
       - name: Install Axios
-        run: npm install axios # خطوة ضرورية جداً
+        run: npm install axios
 
       - name: Run Pinger
         run: node pinger.js
